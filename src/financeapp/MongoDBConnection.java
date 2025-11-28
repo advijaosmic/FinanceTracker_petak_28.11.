@@ -11,7 +11,7 @@ public class MongoDBConnection {
 
     private static MongoClient client = null;
     private static MongoDatabase database = null;
-    
+
     public static MongoDatabase getDatabase() {
         if (client == null) {
             client = MongoClients.create(URI);
